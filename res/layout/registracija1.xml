@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="100" >
+
+    <EditText
+        android:id="@+id/et_reg_ime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Име*"
+        android:inputType="textPersonName" >
+
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/et_reg_prezime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Презиме*"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/et_reg_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="eMail*"
+        android:inputType="textEmailAddress" />
+
+    <EditText
+        android:id="@+id/et_reg_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Лозинка*"
+        android:inputType="textPassword" />
+
+    <EditText
+        android:id="@+id/et_reg_vipkod"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="ВИП Код (Доколку Имате)" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="bottom" >
+
+        <CheckBox
+            android:id="@+id/cb_reg_checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Се согласувам со општите услови за користење на KupiKniga.mk" />
+
+        <TextView
+            android:id="@+id/tv_reg_opuslovi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Општи Услови"
+            android:textColor="#ff00ff"
+            android:gravity="center_horizontal"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <Button
+            android:id="@+id/btn_reg_sledno"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Следна" />
+
+    </LinearLayout>
+
+</LinearLayout>

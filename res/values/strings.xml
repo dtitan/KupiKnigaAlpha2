@@ -1,0 +1,12 @@
+<resources>
+
+    <string name="app_name">KupiKnigaAlpha2</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Подесување</string>
+    <string name="title_activity_main">Купи Книга</string>
+    <string name="preporacani">Препорачани Книги</string>
+    <string name="kniga_na_denot">Книга На Денот</string>
+    <string name="title_activity_test">Test</string>
+    <string name="menu_logging">Логирање</string>
+
+</resources>
