@@ -24,7 +24,7 @@ public class KnigaNaDenot {
 	String NAMESPACE = "http://tempuri.org/";
 	String METHOD_NAME = "EdnaKniga";
 	String SOAP_ACTION = "http://tempuri.org/EdnaKniga";
-	String URL = "http://192.168.0.101/service/service.asmx";
+	String URL = "http://192.168.0.100/service/service.asmx";
 	
 	HashMap<String, String> kniga = new HashMap<String, String>();
 	

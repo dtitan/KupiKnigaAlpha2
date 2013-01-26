@@ -45,13 +45,14 @@ public class MainActivity extends BaseKupiKniga {
 	String NAMESPACE = "http://tempuri.org/";
 	String METHOD_NAME = "HelloWorld";
 	String SOAP_ACTION = "http://tempuri.org/HelloWorld";
-	String URL = "http://192.168.0.101/service/service.asmx";
+	String URL = "http://192.168.0.100/service/service.asmx";
 
 	KnigaNaDenot knd = new KnigaNaDenot();
 	String text;
 	ArrayList<HashMap<String, String>> myList = new ArrayList<HashMap<String, String>>();//preporacani knigi
 	HashMap<String, String> knigand;//kniga na denot
 
+	
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
@@ -138,17 +139,24 @@ public class MainActivity extends BaseKupiKniga {
 		s.download(myList.get(8).get("slika_url"), im9);
 		s.download(myList.get(9).get("slika_url"), im10);
 		
+		
+		//КНИГА НА ДЕНОТ
 		knigand = knd.getKnigaNaDenotXML();
 		
 		ImageView iv_knd = (ImageView)findViewById(R.id.iv_main_knd);
 		TextView tv_knd = (TextView)findViewById(R.id.tv_main_kndopis);
 		TextView tv_knd_naslov = (TextView)findViewById(R.id.tv_main_naslovknd);
 		
+		
+		
 		s.download(knigand.get("slika_url"), iv_knd);
 		String kratokopis = knigand.get("opis").substring(0, 200);
 		tv_knd.setText(kratokopis+"...");
+		//tv_knd_naslov.setText("Некој Нов Подолг Наслов Од Предходниот Уштее подолг од другиот");
 		tv_knd_naslov.setText(knigand.get("naslov"));
-
+		//End Kniga Na Denot
+		
+		
 		//da se zemi slikata od ImageView
 		Bitmap m = ((BitmapDrawable)im1.getDrawable()).getBitmap();
 		

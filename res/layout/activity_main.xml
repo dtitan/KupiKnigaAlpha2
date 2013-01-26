@@ -163,6 +163,7 @@
                 android:layout_height="match_parent"
                 android:layout_margin="5dp"
                 android:layout_weight="65"
+                android:layout_gravity="fill_horizontal"
                 android:gravity="center_vertical"
                 android:text="Најдобрите приказни од Ориентот. Класично дело со интриги и магија" />
         </LinearLayout>

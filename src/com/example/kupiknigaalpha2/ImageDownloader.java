@@ -16,6 +16,8 @@ import org.apache.http.client.HttpClient;
 import org.apache.http.client.methods.HttpGet;
 import org.apache.http.impl.client.DefaultHttpClient;
 
+import android.app.ProgressDialog;
+import android.content.Context;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.graphics.Color;
@@ -26,6 +28,7 @@ import android.os.AsyncTask;
 import android.os.Handler;
 import android.util.Log;
 import android.widget.ImageView;
+import android.widget.ProgressBar;
 
 /**
  * This helper class download images from the Internet and binds those with the provided ImageView.
@@ -231,12 +234,23 @@ public class ImageDownloader {
     class BitmapDownloaderTask extends AsyncTask<String, Void, Bitmap> {
         private String url;
         private final WeakReference<ImageView> imageViewReference;
+        
 
         public BitmapDownloaderTask(ImageView imageView) {
             imageViewReference = new WeakReference<ImageView>(imageView);
         }
+        
+        
 
-        /**
+        @Override
+		protected void onProgressUpdate(Void... values) {
+        	
+			ProgressDialog s = ProgressDialog.show(MyApp.getAppContext(), "sdfsd", "sdfsd");
+		}
+
+
+
+		/**
          * Actual download method.
          */
         @Override

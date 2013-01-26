@@ -917,14 +917,20 @@ containing a value of this type.
         public static final int abs__textfield_searchview_holo_light=0x7f02006c;
         public static final int abs__textfield_searchview_right_holo_dark=0x7f02006d;
         public static final int abs__textfield_searchview_right_holo_light=0x7f02006e;
-        public static final int ic_action_search=0x7f02006f;
-        public static final int ic_launcher=0x7f020070;
+        public static final int droidfurydevelopmentsplash=0x7f02006f;
+        public static final int ic_action_search=0x7f020070;
+        public static final int ic_launcher=0x7f020071;
+        public static final int logo=0x7f020072;
+        public static final int pozadina=0x7f020073;
     }
     public static final class id {
-        public static final int BTN_lir_log_in=0x7f04004c;
-        public static final int BTN_lir_register=0x7f04004d;
-        public static final int ET_lir_password=0x7f04004b;
-        public static final int ET_lir_username=0x7f04004a;
+        public static final int BTN_lir_log_in=0x7f04004b;
+        public static final int BTN_lir_register=0x7f04004c;
+        public static final int ET_lir_password=0x7f04004a;
+        public static final int ET_lir_username=0x7f040049;
+        public static final int IV=0x7f040057;
+        public static final int IV1=0x7f040059;
+        public static final int TV=0x7f040058;
         public static final int abs__action_bar=0x7f040022;
         public static final int abs__action_bar_container=0x7f040021;
         public static final int abs__action_bar_subtitle=0x7f040011;
@@ -966,27 +972,26 @@ containing a value of this type.
         public static final int abs__titleDivider=0x7f04001c;
         public static final int abs__up=0x7f04000b;
         public static final int btn_kategorii=0x7f040040;
-        public static final int btn_reg2_home=0x7f040057;
-        public static final int btn_reg_sledno=0x7f040055;
-        public static final int button1=0x7f040048;
-        public static final int cb_reg_checkbox=0x7f040053;
+        public static final int btn_reg2_home=0x7f040056;
+        public static final int btn_reg_sledno=0x7f040054;
+        public static final int cb_reg_checkbox=0x7f040052;
         public static final int disableHome=0x7f040009;
         public static final int edit_query=0x7f040027;
-        public static final int et_reg2_mail=0x7f040056;
-        public static final int et_reg_email=0x7f040050;
-        public static final int et_reg_ime=0x7f04004e;
-        public static final int et_reg_password=0x7f040051;
-        public static final int et_reg_prezime=0x7f04004f;
-        public static final int et_reg_vipkod=0x7f040052;
+        public static final int et_reg2_mail=0x7f040055;
+        public static final int et_reg_email=0x7f04004f;
+        public static final int et_reg_ime=0x7f04004d;
+        public static final int et_reg_password=0x7f040050;
+        public static final int et_reg_prezime=0x7f04004e;
+        public static final int et_reg_vipkod=0x7f040051;
         public static final int homeAsUp=0x7f040006;
         public static final int imageView1=0x7f040041;
         public static final int iv_ednakniga_slika=0x7f040043;
         public static final int iv_main_knd=0x7f04003e;
         public static final int listMode=0x7f040002;
-        public static final int lv_kategorii=0x7f040049;
-        public static final int menu_logging=0x7f040059;
-        public static final int menu_search=0x7f04005a;
-        public static final int menu_settings=0x7f040058;
+        public static final int lv_kategorii=0x7f040048;
+        public static final int menu_logging=0x7f04005b;
+        public static final int menu_search=0x7f04005c;
+        public static final int menu_settings=0x7f04005a;
         public static final int normal=0x7f040001;
         public static final int ratingBar1=0x7f040042;
         public static final int showCustom=0x7f040008;
@@ -1009,7 +1014,7 @@ containing a value of this type.
         public static final int tv_ednakniga_opis=0x7f040047;
         public static final int tv_main_kndopis=0x7f04003f;
         public static final int tv_main_naslovknd=0x7f04003d;
-        public static final int tv_reg_opuslovi=0x7f040054;
+        public static final int tv_reg_opuslovi=0x7f040053;
         public static final int useLogo=0x7f040004;
         public static final int wrap_content=0x7f040000;
     }
@@ -1045,10 +1050,12 @@ containing a value of this type.
         public static final int edna_kniga=0x7f030019;
         public static final int kategorii=0x7f03001a;
         public static final int log_in_register_layout=0x7f03001b;
-        public static final int registracija1=0x7f03001c;
-        public static final int registracija2=0x7f03001d;
-        public static final int sherlock_spinner_dropdown_item=0x7f03001e;
-        public static final int sherlock_spinner_item=0x7f03001f;
+        public static final int nointernet=0x7f03001c;
+        public static final int registracija1=0x7f03001d;
+        public static final int registracija2=0x7f03001e;
+        public static final int sherlock_spinner_dropdown_item=0x7f03001f;
+        public static final int sherlock_spinner_item=0x7f030020;
+        public static final int splash=0x7f030021;
     }
     public static final class menu {
         public static final int activity_main=0x7f0b0000;

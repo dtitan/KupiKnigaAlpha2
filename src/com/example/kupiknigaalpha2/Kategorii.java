@@ -1,8 +1,12 @@
 package com.example.kupiknigaalpha2;
 
 import android.os.Bundle;
+import android.view.View;
+import android.widget.AdapterView;
+import android.widget.AdapterView.OnItemClickListener;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
+import android.widget.Toast;
 
 public class Kategorii extends BaseKupiKniga {
 
@@ -28,6 +32,15 @@ public class Kategorii extends BaseKupiKniga {
 		ArrayAdapter<String> adapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, android.R.id.text1,kategorii);
 
 		lv.setAdapter(adapter);
+		
+		lv.setOnItemClickListener(new OnItemClickListener() {
+
+			public void onItemClick(AdapterView<?> arg0, View arg1, int arg2,
+					long arg3) {
+				Toast.makeText(getBaseContext(), "Test Click"+arg2, Toast.LENGTH_SHORT).show();
+				
+			}
+		});
 
 	}
 
